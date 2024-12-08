@@ -1,13 +1,3 @@
-{-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
-{-# HLINT ignore "Use concatMap" #-}
-{-# HLINT ignore "Use !!" #-}
-{-# HLINT ignore "Redundant bracket" #-}
-{-# HLINT ignore "Use head" #-}
-import Data.List (transpose, reverse, sortBy)
-import Data.Foldable ( minimumBy )
-import Data.Function (on)
-type Maze = [String]
-
 
 printMaze :: Maze -> IO ()
 printMaze x = putStr (concat (map (++"\n") x))
